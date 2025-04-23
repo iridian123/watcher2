@@ -1,13 +1,16 @@
-# Twitter Watcher
 
-A Python-based tool that monitors who a public Twitter account follows.
-Sends Telegram notifications when new accounts are followed.
+# Twitter Follow Watcher (Public)
 
-### Required ENV:
-- BOT_TOKEN: Telegram bot token
-- TELEGRAM_CHAT_ID: your Telegram chat ID
+Monitors public Twitter accounts for new followings and notifies users via Telegram.
 
-### Setup (locally):
-pip install -r requirements.txt
-playwright install
-python watcher_twitter.py
+## Features
+- Telegram bot accepts /watch @username
+- Watcher checks following changes every 60 sec
+- Uses Playwright (no login required)
+- Docker-compatible
+
+## ENV
+- BOT_TOKEN (Telegram bot token)
+
+## Deploy
+Works on Railway or locally with Docker.
